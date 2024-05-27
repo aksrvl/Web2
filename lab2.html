@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошик покупок</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-main">
+        <div class="container">
+            <div class="shopping-cart">
+                <div class="add-item">
+                    <input type="text" placeholder="Назва товару" id="item-input">
+                    <button id="add-button" data-tooltip="Додавання">Додати</button>
+                </div>
+                <hr>
+                <div id="item-list">
+                    <div class="item">
+                        <span class="item-name bought">Помідори</span>
+                        <div class="item-controls-change">
+                            <span class="item-quantity-notbought">2</span>
+                        </div>
+                        <div class="item-controls">
+                            <button class="item-toggle-status" data-tooltip="Відмитити">Не куплено</button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="item">
+                        <span class="item-name">Печиво</span>
+                        <div class="item-controls-change">
+                            <button class="item-decrement" data-tooltip="Відняти">-</button>
+                            <span class="item-quantity">2</span>
+                            <button class="item-increment" data-tooltip="Додати">+</button>
+                        </div>
+                        <div class="item-controls">
+                            <button class="item-toggle-status" data-tooltip="Відмитити">Куплено</button>
+                            <button class="item-delete" data-tooltip="Видалити">×</button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="item">
+                        <span class="item-name">Сир</span>
+                        <div class="item-controls-change">
+                            <button class="item-decrement" data-tooltip="Відняти">-</button>
+                            <span class="item-quantity">1</span>
+                            <button class="item-increment" data-tooltip="Додати">+</button>
+                        </div>
+                        <div class="item-controls">
+                            <button class="item-toggle-status" data-tooltip="Відмитити">Куплено</button>
+                            <button class="item-delete" data-tooltip="Видалити">×</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-summary">
+            <div class="summary">
+                <h2>Залишилося</h2>
+                <hr>
+                <div class="remaining-items">
+                    <div class="remaining-item">
+                        <span>Печиво</span><span class="num">2</span>
+                    </div>
+                    <div class="remaining-item">
+                        <span>Сир</span><span class="num">1</span>
+                    </div>
+                </div>
+                <hr>
+                <h2>Куплено</h2>
+                <hr>
+                <div class="bought-items">
+                    <div class="bought-item">
+                        <span class="bought">Помідори</span><span class="num">2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="badge">
+        <div id="badge-title">Buy List</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
