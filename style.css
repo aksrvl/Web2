@@ -31,7 +31,6 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     margin-left: 40px;
-    height: 270px;
 }
 
 .shopping-cart {
@@ -70,6 +69,7 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
+    transition: height 0.3s ease-in-out;
 }
 
 .item {
@@ -88,6 +88,10 @@ body {
 
 .bought {
     text-decoration: line-through;
+}
+
+.hidden{
+    display: none;
 }
 
 .item-controls {
@@ -172,7 +176,7 @@ body {
     border-bottom: 3px solid #ae2b3883;
 }
 
-.item-controls .item-toggle-status {
+.item-controls .item-status {
     padding: 5px 10px;
     width: 100px;
     height: 30px;
@@ -185,7 +189,7 @@ body {
     font-size: 12px;
 }
 
-.item-controls .item-toggle-status:hover {
+.item-controls .item-status:hover {
     background-color: #d4d4d4a9;
     color: #606060;
 }
@@ -268,11 +272,11 @@ hr {
     }
 }
 
-button[data-tooltip]{
+button[title]{
     position: relative; 
 }
-button[data-tooltip]:before {
-    content: attr(data-tooltip); 
+button[title]::before {
+    content: attr(title); 
     position: absolute; 
     bottom: calc(100% + 5px); 
     left: 50%; 
@@ -286,7 +290,7 @@ button[data-tooltip]:before {
     transition: opacity 0.5s; 
 }
 
-button[data-tooltip]:hover:before {
+button[title]:hover::before {
     opacity: 1; 
 }
 
@@ -342,4 +346,3 @@ button[data-tooltip]:hover:before {
         margin-top: 0;
     }
 }
-

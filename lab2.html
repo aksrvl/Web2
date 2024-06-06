@@ -12,43 +12,46 @@
             <div class="shopping-cart">
                 <div class="add-item">
                     <input type="text" placeholder="Назва товару" id="item-input">
-                    <button id="add-button" data-tooltip="Додавання">Додати</button>
+                    <button id="add-button" title="Додавання">Додати</button>
                 </div>
                 <hr>
                 <div id="item-list">
                     <div class="item">
                         <span class="item-name bought">Помідори</span>
                         <div class="item-controls-change">
+                            <button class="item-decrement" title="Відняти" style="display: none;">-</button>
                             <span class="item-quantity-notbought">2</span>
+                            <button class="item-increment" title="Додати" style="display: none;">+</button>
                         </div>
                         <div class="item-controls">
-                            <button class="item-toggle-status" data-tooltip="Відмитити">Не куплено</button>
+                            <button class="item-status" title="Відмитити">Не куплено</button>
+                            <button class="item-delete" title="Видалити" style="display: none;">×</button>
                         </div>
                     </div>
                     <hr>
                     <div class="item">
                         <span class="item-name">Печиво</span>
                         <div class="item-controls-change">
-                            <button class="item-decrement" data-tooltip="Відняти">-</button>
+                            <button class="item-decrement" title="Відняти">-</button>
                             <span class="item-quantity">2</span>
-                            <button class="item-increment" data-tooltip="Додати">+</button>
+                            <button class="item-increment" title="Додати">+</button>
                         </div>
                         <div class="item-controls">
-                            <button class="item-toggle-status" data-tooltip="Відмитити">Куплено</button>
-                            <button class="item-delete" data-tooltip="Видалити">×</button>
+                            <button class="item-status" title="Відмитити">Куплено</button>
+                            <button class="item-delete" title="Видалити">×</button>
                         </div>
                     </div>
                     <hr>
                     <div class="item">
                         <span class="item-name">Сир</span>
                         <div class="item-controls-change">
-                            <button class="item-decrement" data-tooltip="Відняти">-</button>
+                            <button class="item-decrement" title="Відняти">-</button>
                             <span class="item-quantity">1</span>
-                            <button class="item-increment" data-tooltip="Додати">+</button>
+                            <button class="item-increment" title="Додати">+</button>
                         </div>
                         <div class="item-controls">
-                            <button class="item-toggle-status" data-tooltip="Відмитити">Куплено</button>
-                            <button class="item-delete" data-tooltip="Видалити">×</button>
+                            <button class="item-status" title="Відмитити">Куплено</button>
+                            <button class="item-delete" title="Видалити">×</button>
                         </div>
                     </div>
                 </div>
